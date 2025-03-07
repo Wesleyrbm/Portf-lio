@@ -96,14 +96,17 @@ body {
     animation-delay: 3s;
 }
 
+.person-nome {
+    margin-top: 11rem;
+}
+
 .stacks-content{
     display: flex;
-    align-items: center;
+    
     justify-content: center;
-    flex-wrap: wrap;
 
     flex-direction: column;
-    /*margin-top: 6rem;*/
+    margin-top: 6rem;
 }
 
 .stacks-content h3 {
@@ -114,12 +117,23 @@ body {
     
 }
 
+.stacks {
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+}
+
 .stacks ul li{
     display: flex;
     align-items: center;
 
+    position: relative;
+
     margin: 10px;
     padding: 10px;
+
+    list-style: none;
 
 }
 
@@ -130,10 +144,24 @@ body {
     transition: transorm 0.3s ease;
 }
 
-.stacks ul li div img: hover.stacks ul li div img:hover {
+.stacks ul li div img:hover {
     transform:  scale(1.2 );
     cursor: pointer;
 }
+
+.stacks ul li div:hover::after{ 
+    content: attr(data);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    width: 20px;
+    height: 20px;
+
+    color: var(--color-white);
+}
+
+
 @keyframes written_text {
     100% {
         color: var(--color-white);
