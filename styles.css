@@ -109,9 +109,31 @@ body {
 .stacks-content h3 {
     color: var(--color-white);
     font-size: 1.15rem;
-    margin: ;
+
+    margin-left: 20px;
+    
 }
 
+.stacks ul li{
+    display: flex;
+    align-items: center;
+
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.stacks ul li img {
+    width: 30px;
+    height: auto;   
+
+    transition: transorm 0.3s ease;
+}
+
+.stacks ul li div img: hover.stacks ul li div img:hover {
+    transform:  scale(1.2 );
+    cursor: pointer;
+}
 @keyframes written_text {
     100% {
         color: var(--color-white);
